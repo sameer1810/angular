@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <title>My hello component</title>
+</head>
+<body>
+  <div ng-app="" ng-init="emp={
+    empId : '1234', eName='Sameer'}">
+    <input type="text" [(ngModel)]="name">
+    <p>the name is <span ng-bind="name"> {{ empId }}
+        {{ eName }}
+    </span></p>
+</div>
+</body>
+</html>
